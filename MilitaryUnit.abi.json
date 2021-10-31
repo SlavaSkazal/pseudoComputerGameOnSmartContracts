@@ -1,0 +1,93 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"addrBaseStation","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"attackingPower","type":"uint256"},
+				{"name":"addrBaseStation","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"attackedObject","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPowerOfAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getAddressBaseStation",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "deathByBaseStation",
+			"inputs": [
+				{"name":"killer","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPowerOfProtection",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getPointsOfLive",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "addressBaseStation",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"addressBaseStation","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"pointsOfLive","type":"uint256"},
+		{"name":"protectionPower","type":"uint256"},
+		{"name":"addressBaseStation","type":"address"},
+		{"name":"attackPower","type":"uint256"}
+	]
+}
